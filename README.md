@@ -13,20 +13,20 @@ The docker file is pretty simple, from the official Node-RED image it install th
 ## How to build
 ### From Docker hub
 ```
-$> docker pull johanncoste/docker-nodered-rpi_ws281x:latest
+$> docker pull johanncoste/rpi_ws281x_nodered:latest
 ```
 
 ### Manually
 ```
 $> git clone https://github.com/JohannCOSTE/docker-nodered-rpi_ws281x.git .
 $> cd docker-nodered-rpi_ws281x
-$> docker build -t docker-nodered-rpi_ws281x .
+$> docker build -t rpi_ws281x_nodered .
 ```
 
 ## How to run
 Beacause of GPIO access, you have to run the container in privileged mode:
 ```
-docker run -p 1880:1880 --privileged docker-nodered-rpi_ws281x
+docker run -p 1880:1880 --privileged johanncoste/rpi_ws281x_nodered
 ```
 
 ## How to access
