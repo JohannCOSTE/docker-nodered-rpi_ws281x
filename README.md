@@ -49,3 +49,6 @@ You may have to edit the `# LED strip configuration` section of them in order to
 There is also a Json flow `color_flow.json` that will show you an exemple of the script usage via Node-RED. You have to import it manually via the `Import` option in Node-RED.
 
 ## How to wire
+You will find Fritzing file in the `fritzing` directory (you can download fritzing [here](https://fritzing.org/download/)).
+
+![Schema](fritzing/schema.png)
